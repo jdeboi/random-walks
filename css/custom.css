@@ -1,0 +1,128 @@
+header.masthead {
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 4.5rem);
+    height: 100vh;
+}
+
+.bgimg {
+    background: linear-gradient(to bottom, rgba(20, 77, 66, 0.8) 0%, rgba(87, 78, 72, 0.8) 100%);
+    /* background-image: url("../assets/images/bg2.png"); */
+    /* background: linear-gradient(to bottom, rgba(255, 241, 194, 1) 0%, rgba(255, 241, 194, .5) 20%, rgba(20, 77, 66, 0.5) 50%,  rgba(20, 77, 66, 0.5) 100%); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.rainbowBackground {
+    /* background: linear-gradient(
+        124deg,
+        #ff2400,
+        #e81d1d,
+        #e8b71d,
+        #e3e81d,
+        #1de840,
+        #1ddde8,
+        #2b1de8,
+        #dd00f3,
+        #dd00f3
+    ); */
+
+    /* background: white; */
+}
+
+#inputBar {
+    visibility: hidden;
+    /* position: absolute; */
+    /* top: 80px; */
+    width:453px;
+    z-index: 500;
+    box-shadow: 0 2px 18px rgba(0,0,0,.15);
+}
+
+#inputBar .noFlex {
+    flex: 0 0 80px;
+}
+
+#instructionsContainer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+#mapContainer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    /* visibility: hidden; */
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+}
+
+.modal {
+    display: none;
+}
+
+.markerStart {
+    background: rgba(173, 216, 230);
+    background-position: 12px 0px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 8px solid blue;
+    cursor: pointer;
+}
+
+.markerEnd {
+    background-image: url("../assets/images/marker.png");
+    background-size: 25px 40px;
+    background-repeat: no-repeat;
+    background-position: 12px 0px;
+    margin-top: -10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* background: blue; */
+    cursor: pointer;
+}
+
+.markerClick {
+    background-image: url("../assets/images/marker.png");
+    background-size: 25px 40px;
+    background-repeat: no-repeat;
+    background-position: 12px 0px;
+    margin-top: -10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.mapboxgl-ctrl-geocoder{
+    border-bottom-right-radius: 0px;
+    z-index: inherit;
+    border-top-right-radius: 0px;
+    
+}
+
+.mapboxgl-ctrl-geocoder, .mapboxgl-ctrl-geocoder .suggestions {
+    box-shadow: none;
+    box-sizing: border-box;
+    border-left: 1px solid #ced4da;
+    border-top: 1px solid #ced4da;
+    border-bottom: 1px solid #ced4da;
+}
+
+.geocoder {
+    
+}
